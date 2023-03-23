@@ -1,4 +1,4 @@
-FROM openjdk:11.0.9.1-jdk
+FROM openjdk:18.0-jdk
 COPY target/goodskill.war /app/goodskill.war
 # copy arthas
 COPY --from=hengyunabc/arthas:latest /opt/arthas /opt/arthas
